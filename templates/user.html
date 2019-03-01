@@ -1,0 +1,19 @@
+{% extends "root.html" %}
+{% block body %}
+
+
+<table>
+    <tbody>
+       {% for item in user %}
+          <tr>
+             <td>{{ item.ID }}</td>
+             <td>{{ item.name }}</td>
+             <td>{{ item.username }}</td>
+             <td>{{ item.email }}</td>
+             <td>{{ item.password }}</td>
+          </tr>
+       {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
